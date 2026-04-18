@@ -5,6 +5,7 @@ import { NewsCard, HackathonCard, SectionHeader } from "@/components/BlogCompone
 import { motion } from "motion/react";
 import { Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars";
 
 export default function Home() {
   const articles = [
@@ -76,7 +77,7 @@ export default function Home() {
       </section>
 
       {/* Hackathon Calendar Section */}
-      <section className="px-6 md:px-12 py-32 bg-transparent border-y border-white/5 relative">
+      <section className="px-6 md:px-12 py-32 bg-black border-y border-white/5 relative">
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16">
           <div className="lg:col-span-5">
@@ -132,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="px-6 md:px-12 py-12 border-t border-white/5 text-center">
+      <footer className="px-6 md:px-12 py-12 border-t border-white/5 text-center bg-black">
         <p className="text-zinc-700 text-[10px] font-mono uppercase tracking-[0.3em]">
           &copy; 2026 INFO-NET PROTOCOL // All rights reserved
         </p>

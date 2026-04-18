@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 py-24 overflow-hidden bg-transparent">
+    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 py-24 overflow-hidden bg-black">
       {/* Structural Accent Lines */}
       <div className="absolute top-0 left-1/4 w-px h-full bg-white/5 hidden lg:block" />
       <div className="absolute top-0 right-1/4 w-px h-full bg-white/5 hidden lg:block" />
@@ -115,15 +115,14 @@ const HeroSection = () => {
               src="/assets/hero-image.jpg"
               alt="Tech Portal Interface"
               fill
-              className="object-cover grayscale opacity-20 group-hover:opacity-40 transition-opacity duration-1000"
+              className="object-cover opacity-65 transition-opacity duration-1000"
               priority
             />
 
-
-            <div className="absolute top-4 left-4 font-mono text-[10px] text-blue-500/50 uppercase tracking-widest">
+            <div className="absolute top-4 left-4 font-mono text-[10px] text-blue-200/90 uppercase tracking-widest">
               Live Feed // Builder_Activity: High
             </div>
-            <div className="absolute bottom-4 right-4 font-mono text-[10px] text-white/20">
+            <div className="absolute bottom-4 right-4 font-mono text-[10px] text-white/80">
               MLH_SYNCED // April_2026_Cycle
             </div>
           </div>
