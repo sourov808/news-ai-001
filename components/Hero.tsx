@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 py-24 overflow-hidden bg-black">
+    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 py-24 pt-32 overflow-hidden bg-black">
       {/* Structural Accent Lines */}
       <div className="absolute top-0 left-1/4 w-px h-full bg-white/5 hidden lg:block" />
       <div className="absolute top-0 right-1/4 w-px h-full bg-white/5 hidden lg:block" />
