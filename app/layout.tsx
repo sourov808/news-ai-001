@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bebas_Neue, Merienda } from "next/font/google";
 import "./globals.css";
+import { StarsBackground } from "@/components/animate-ui/components/backgrounds/stars";
+import Navber from "@/components/Navber";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bebasNeue = Bebas_Neue({
+  variable: "--font-bebas-neue",
   subsets: ["latin"],
+  weight: "400",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const merienda = Merienda({
+  variable: "--font-merienda",
   subsets: ["latin"],
 });
 
@@ -25,9 +28,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${bebasNeue.variable} ${merienda.variable} min-h-screen antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex flex-col">
+        
+          <StarsBackground className="absolute inset-0 z-[-1]" />
+       
+       
+          <Navber />
+        {children}
+       
+      </body>
     </html>
   );
 }
